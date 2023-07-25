@@ -1,0 +1,382 @@
+/*-----------------------------------SELECTOR UNIVERSAL------------------------------------------*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*-----------------------------------------CSS BODY----------------------------------------------*/
+body {
+  font-size: 12px;
+  font-family: roboto;
+  background-color: #ebebeb;
+}
+
+/*-----------------------------------------CSS HEADER--------------------------------------------*/
+header {
+  background-color: #eac926;
+  padding: 10px;
+}
+
+.logo {
+  width: 50%;
+  display: inline;
+  margin-left: 10px;
+}
+
+.header-top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.barra-busqueda {
+  padding-top: 5px;
+}
+
+.fa-search {
+  background-color: white;
+}
+
+#button-search {
+  background-color: white;
+  border: 1px solid white;
+  color: #666;
+  position: absolute;
+  right: 24px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.busqueda {
+  width: 95%;
+  height: 80%;
+  border: 1px solid white;
+  border-radius: 5px;
+}
+
+.fa-hand-holding-usd {
+  margin-right: 5px;
+}
+
+.compra-cuotas {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+  font-size: 13px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.fa-id-card,
+.fa-sign-in-alt,
+.fa-shopping-basket {
+  margin-left: 5px;
+}
+
+.burger-menu {
+  margin: auto;
+  background-color: #03264c;
+  color: white;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+}
+
+/*-----------------------------------------CSS MAIN----------------------------------------------*/
+main {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.banner {
+  width: 100%;
+}
+
+.section_visita,
+.section_oferta {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.titulos {
+  width: 90%;
+  text-align: start;
+  margin: 1rem;
+  font-size: 24px;
+  color: #666;
+}
+
+.producto {
+  background-color: white;
+  max-width: 360px;
+  margin-bottom: 10px;
+}
+
+.producto-imagen {
+  width: 100%;
+}
+
+.detalle-producto {
+  border-top: 1px solid #ebebeb;
+  padding: 15px;
+}
+
+.precio-descuento {
+  display: flex;
+  position: relative;
+  justify-content: start;
+  align-items: baseline;
+  width: 100%;
+  gap: 15px;
+}
+
+.truck-icon {
+  display: block;
+  font-size: 16px;
+  padding: 5px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #39b54a;
+  background-color: #fff;
+  border-radius: 50%;
+  position: relative;
+  left: 290px;
+  bottom: 30px;
+  align-content: center;
+  transition: all 0.5s;
+}
+
+.visita,
+.ofertas {
+  font-size: 24px;
+  margin: 10px 0 10px 12px;
+}
+
+.precios {
+  font-size: 18px;
+}
+
+.descuento {
+  font-size: 16px;
+}
+
+.descripcion {
+  display: none;
+  font-size: 16px;
+  color: #666;
+  
+}
+
+/*--------------------------------------CSS FOOTER-----------------------------------------------*/
+footer {
+  text-align: center;
+  margin: 20px;
+}
+
+.fa-credit-card,
+.fa-gift,
+.fa-user-shield {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.section-footer {
+  margin-bottom: 15px;
+}
+
+/*-----------------------------------CSS MOBILE ONLY---------------------------------------------*/
+
+
+.navbar {
+  display: none;
+}
+
+/*--------------------------------CSS MEDIA QUERY TABLET----------------------------------------*/
+@media (min-width: 426px) {
+  .logo {
+    width: 50%;
+  }
+
+  .busqueda {
+    width: 80%;
+    height: 40px;
+  }
+
+  .barra-busqueda {
+    margin-right: 10px;
+  }
+
+  .header-top {
+    justify-content: left;
+  }
+
+  .section_visita,
+  .section_oferta {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .titulos {
+    margin: 10px 10px 10px 20px;
+  }
+
+  .descripcion {
+    display: block;
+    margin-top: 10px;
+  }
+
+  
+
+  .compra-cuotas {
+    font-size: 20px;
+  }
+
+  .fa-search {
+    font-size: 22px;
+  }
+
+  .barra-busqueda {
+    display: flex;
+    justify-content: end;
+    align-content: center;
+    height: 50%;
+    width: 50%;
+    padding-top: 30px;
+  }
+
+  .busqueda {
+    margin-left: 5px;
+  }
+
+  .producto {
+    max-width: 315px;
+  }
+
+  .truck-icon {
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #fff;
+    border-radius: 50%;
+    position: relative;
+    left: 250px;
+    bottom: 30px;
+    align-content: center;
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 10px 0 10px;
+  }
+  .nav-accesos {
+    display: inline-flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    font-size: 15px;
+    list-style-type: none;
+    gap: 15px;
+  }
+
+  .nav-perfil {
+    display: inline-flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    font-size: 15px;
+    list-style-type: none;
+    gap: 15px;
+  }
+
+  .burger-menu {
+    display: none;
+  }
+
+  footer {
+    font-size: 20px;
+  }
+}
+
+/*--------------------------------CSS MEDIA QUERY DESKTOP----------------------------------------*/
+@media (min-width: 769px) {
+  main {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .titulos {
+    margin: 10px 10px 10px 17px;
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 25px;
+  }
+  .nav-accesos {
+    display: inline-flex;
+    justify-content: start;
+    flex-direction: row;
+    font-size: 20px;
+    list-style-type: none;
+    gap: 25px;
+  }
+
+  .nav-perfil {
+    display: inline-flex;
+    justify-content: end;
+    flex-direction: row;
+    font-size: 20px;
+    list-style-type: none;
+    gap: 25px;
+  }
+
+  .producto {
+    max-width: 285px;
+    margin-left: 20px;
+    transition: all 0.5s;
+  }
+
+  .truck-icon {
+    left: 220px;
+  }
+
+  .descripcion {
+    color: white;
+    transition: all 0.5s;
+  }
+
+  .producto:hover {
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+  }
+
+  .producto:hover .descripcion {
+    color: #666;
+  }
+
+  .producto:hover .truck-icon {
+    transform: rotate(-90deg);
+  }
+
+  #footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+}
