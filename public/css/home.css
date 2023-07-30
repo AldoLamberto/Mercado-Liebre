@@ -189,6 +189,16 @@ footer {
 .fa-user-shield {
   font-size: 2em;
   margin-bottom: 10px;
+  
+}
+
+.fa-credit-card:hover,
+.fa-gift:hover,
+.fa-user-shield:hover {
+  filter: invert(28%) sepia(74%) saturate(1525%) hue-rotate(92deg) brightness(96%) contrast(105%);
+  
+
+  
 }
 
 .section-footer {

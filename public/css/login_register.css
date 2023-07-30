@@ -43,7 +43,12 @@ main {
 
 
 #foto_usuario {
-   padding: 3px; 
+   padding: 3px;
+
+}
+
+.foto_user {
+    padding-top: 10px;
 }
 
 #confirmar_contraseña, #fecha_nacimiento, #comprar, #foto_usuario {
